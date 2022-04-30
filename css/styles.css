@@ -79,6 +79,11 @@ ul{
     padding-bottom: 200px;
     background-color: var(--background-color);
     color: #FFFFFF;
+    flex-grow: 1;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/buissness-bg.jpg);
+    width: 1600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
 .head{
@@ -143,6 +148,19 @@ ul{
     display: none;
 }
 
+.work-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-svg{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+}
+
 .work-list{
     text-align: start;
     display: flex;
@@ -153,6 +171,7 @@ ul{
     max-width: 270px;
 }
 .priority{
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
@@ -188,10 +207,6 @@ ul{
 
 .img + .img{
     margin-left: 30px;
-}
-
-.section-team{
-    background-color: #F5F4FA
 }
 
 .list-team{
@@ -243,6 +258,54 @@ ul{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--text-color)
+}
+
+.team-li{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-icon:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-icon{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.section-client{
+    border-color: #E5E5E5;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.client-li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-img{
+    width: 170px;
+    height: 92px;
+    margin-top: 50px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-repeat: no-repeat;
 }
 
 .header-name{
