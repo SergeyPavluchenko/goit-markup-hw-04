@@ -112,7 +112,6 @@ ul{
 }
 .header-team{
     margin-bottom: 50px;
-    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -317,9 +316,13 @@ ul{
     justify-content: space-between;
 }
 
-.client-img{
+.client-link{
     width: 170px;
     height: 92px;
+    padding: 16px 32px;
+}
+
+.client-link{
     background-color: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
@@ -327,10 +330,11 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
 
-.client-img:hover,
-.client-img:focus{
+.client-link:hover,
+.client-link:focus{
     border-color: #2196F3;
 }
 
@@ -338,8 +342,8 @@ ul{
     fill: #AFB1B8;
 }
 
-.client-img:hover .client-link-svg,
-.client-img:focus .client-link-svg{
+.client-link:hover .client-link-svg,
+.client-link:focus .client-link-svg{
     fill: #2196F3;
 }
 
@@ -358,15 +362,15 @@ ul{
     color: #212121;
 }
 
-.header-item{
+.header-info:not(:last-child){
     margin-right: 50px;
+}
+
+.header-item{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-}
-.header-item:not(:last-child) {
-    margin-right: 50px;
 }
 
 .header-item:hover,
@@ -374,15 +378,14 @@ ul{
     color: #2196F3;
 }
 
-.header-contact-li{
-    margin-left: 30px;
+.header-item:link{
+    color: yellow;
 }
 
 .header-contact-list{
     display: flex;
     align-items: center;
     margin-left: auto;
-    align-items: baseline;
 }
 
 
@@ -397,7 +400,8 @@ ul{
     color: var(--text-color);
     text-decoration: none;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    margin-left: 30px;    
 }
 
 .header-contact-icon{
