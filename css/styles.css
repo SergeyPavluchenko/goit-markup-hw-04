@@ -382,6 +382,10 @@ ul{
     color: yellow;
 }
 
+.current{
+    color: #2196F3;
+}
+
 .header-contact-list{
     display: flex;
     align-items: center;
@@ -459,12 +463,16 @@ ul{
     background-color: var(--head-color);
 }
 
-.section-pictures:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 .block{
+    display: block;
     text-decoration: none;
+}
+
+.block:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .section-link{
